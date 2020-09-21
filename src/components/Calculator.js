@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Display from "./Display";
+import Panel from "./Panel";
 import "../styles/Calculator.css";
 
 const Mathjs = require("mathjs");
@@ -30,6 +31,12 @@ const Calculator = ({ initialValue }) => {
           resultExpression={resultExpression}
         />
       </div>
+      <Panel
+        setExpression={setExpression}
+        calculateAndShow={calculateAndShow}
+        expression={expression}
+        setResultExpression={setResultExpresion}
+      />
     </div>
   );
 };
