@@ -36,7 +36,7 @@ const Panel = ({
         key={`${button}`}
         value={`${button}`}
         onClick={(event) =>
-          setExpression(`${expression} ${event.target.value}`)
+          setExpression(`${expression}${event.target.value}`)
         }
       >
         {button}
